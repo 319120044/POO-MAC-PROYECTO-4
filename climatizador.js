@@ -1,9 +1,9 @@
 import { Dispositivo } from "./Dispositivo.js"
-class climatizador extends Dispositivo{
+export class climatizador extends Dispositivo{
     #modo
     #turbo
-    constructor(modo, id, nombre, potenciaWatts, turbo) {
-        super(id, potenciaWatts)
+    constructor(modo, id, nombre, potenciaWatts, turbo, encendido) {
+        super(id, potenciaWatts, nombre, encendido)
         this.#modo = modo
         this.#turbo = false
 
